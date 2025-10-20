@@ -11,3 +11,12 @@ app_test_2.py is a script that generates a text summary based on user input ente
 app_test_uploadversion.py is a script that generates a text summary from an uploaded text file.
 
   =>Please use " ***/upload " for that purpose.
+
+# Usage
+
+```
+python app_test_2.py
+```
+
+open http://127.0.0.1:5000/input
+
