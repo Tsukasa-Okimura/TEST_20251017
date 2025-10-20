@@ -4,4 +4,8 @@
 This is an application designed to generate an initial visit summary from web-based questionnaires used in psychiatric and mental health clinics.
 It is intended for use in Japan.
 
-Please use "***/input"  for that purpose.
+app_test_2.py is a script that generates a text summary based on user input entered on the web.
+Please use ***/input for that purpose.
+
+app_test_uploadversion.py is a script that generates a text summary from an uploaded text file.
+Please use ***/upload for that purpose.
