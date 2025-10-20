@@ -6,8 +6,8 @@ It is intended for use in Japan.
 
 app_test_2.py is a script that generates a text summary based on user input entered on the web.
 
-Please use ***/input for that purpose.
+  =>Please use ***/input for that purpose.
 
 app_test_uploadversion.py is a script that generates a text summary from an uploaded text file.
 
-Please use ***/upload for that purpose.
+  =>Please use ***/upload for that purpose.
