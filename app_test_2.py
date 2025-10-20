@@ -5,9 +5,9 @@ app.secret_key = "replace-this-with-a-random-secret"
 
 FIELDS = [
     ("A", "出生地（A）"),
-    ("B", "兄弟の人数（B）"),
+    ("B", "あなたを含めての兄弟の人数（B）"),
     ("C", "あなたの順番（C）"),
-    ("D", "発達歴（D）"),
+    ("D", "発歴の遅れなどの指摘（D）"),
     ("E", "小学校でのいじめ（E） 0=なし / 1=あり"),
     ("F", "小学校での不登校（F） 0=なし / 1=あり"),
     ("G", "中学校でのいじめ（G） 0=なし / 1=あり"),
@@ -60,7 +60,7 @@ def build_text():
     vals = {k: session.get(k, "").strip() for k, _ in FIELDS}
 
     # --- 兄弟人数 ---
-    if vals.get("B", "") == "0":
+    if vals.get("B", "") == "1":
         sibling_text = "同胞なし。"
     else:
         sibling_text = f"同胞{vals['B']}人の第{vals['C']}子として出生。"
